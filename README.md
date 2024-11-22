@@ -15,3 +15,6 @@ Additional Projects: Several repositories, including grpc, bloaty, and llvm-proj
 Recent Activity:
 
 Frequent contributions to the Protocol Buffers repository, including comments, reviews, and pull requests, demonstrate a continuous involvement in enhancing the functionality and performance of data serialization technologies.
+
+
+<img width="671" alt="image" src="https://github.com/user-attachments/assets/cdd0fa15-da5a-4e68-a981-112eb89bf3f8">
