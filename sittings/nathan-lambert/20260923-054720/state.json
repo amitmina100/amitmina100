@@ -9,10 +9,13 @@
     "open_source_dev",
     "science_lead"
   ],
-  "turn": 2,
+  "turn": 5,
   "speak_count": {
     "people_partner": 1,
-    "ai_evaluator": 1
+    "ai_evaluator": 1,
+    "senior_engineer": 1,
+    "open_source_dev": 1,
+    "engineering_manager": 1
   },
   "seats": {
     "people_partner": {
@@ -66,12 +69,165 @@
       ],
       "question_for": null,
       "resolving_question": "Is there any evidence \u2014 even informal, e.g. an interview answer or a private repo \u2014 of Lambert building or reasoning about multi-step agent harnesses (tool use, subagents, retrieval, validation loops) rather than single-turn model post-training, since the packet as captured is silent on this despite being dense everywhere else?"
+    },
+    "senior_engineer": {
+      "seat": "senior_engineer",
+      "text": "Post-training is Owned, not Used: first-author on 'T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training' (1481 cites), title 'RLHF Team Lead' at Hugging Face, 'co-leading Olmo' at AI2, and first author on RewardBench, which is literally the JD's grader-craft language applied to reward models. But the Python/production-research-craft leg of the disambiguation triad is not visible: TRL is not even among his own natolambert repos \u2014 it's a Scholar citation where he's last of six named authors on lvwerra/trl, which tells us co-authorship credit, not what code he wrote or maintains, and the packet header states 'No README text captured for any repo,' so there is nothing to audit. dgx-spark-setup, already correctly downgraded by the Fact Checker, is Shell. His own Python repos that we can inspect by description are mostly pre-LLM robotics/PhD work (dynamicslearn, mbrl-lib, continuousprediction, 2018-2022) or tooling (rlhf-book, colloquium) rather than post-training training loops, so 'clean Python, debuggable experiments' for LLM post-training specifically is Not Visible rather than demonstrated, and code quality is no signal since zero code content was captured for any repo, forked or original. Verdict: Unverifiable - request code \u2014 the post-training craft and reward-modeling judgment are strong and Owned, but the artefact I'd need is an actual training script or PR he authored (TRL, Tulu recipe repo, or Olmo post-training code) to confirm the Python leg the JD calls non-negotiable, separate from the agent-harness gap ai_evaluator already flagged.",
+      "verdict": "Unverifiable - request code",
+      "confidence": 55,
+      "packet_density": "Dense",
+      "changed": false,
+      "changed_on": "",
+      "cites": [
+        "T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training",
+        "Research Scientist & RLHF Team Lead \u2014 Hugging Face",
+        "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)",
+        "[Github] Trl: Transformer reinforcement learning, L von Werra, Y Belkada, L Tunstall, E Beeching, T Thrush, N Lambert",
+        "reward-bench Public, Forked from allenai/reward-bench",
+        "Rewardbench: Evaluating reward models for language modeling, N Lambert, V Pyatkin, J Morrison, LJ Miranda, BY Lin, K Chandu, N Dziri, ...",
+        "No README text captured for any repo.",
+        "dgx-spark-setup Public ... Shell"
+      ],
+      "background_used": [
+        "TRL (Transformer Reinforcement Learning) is HuggingFace's RLHF/DPO/PPO training library, but co-authorship position on a six-name library credit does not by itself establish which code he wrote or maintains; that requires commit history, not present in the packet."
+      ],
+      "question_for": null,
+      "resolving_question": "Can he show a training script, PR, or repo (Tulu recipe, Olmo post-training code, or a TRL commit) that he personally authored, so the room can classify 'production-grade research Python' as Owned rather than inferred from paper and library co-authorship?"
+    },
+    "open_source_dev": {
+      "seat": "open_source_dev",
+      "text": "PACKET FACT: rlhf-book is 'Textbook on reinforcement learning from human feedback,' Python, 2,405 stars, 277 forks, 'Updated 2 weeks ago' -- a sustained, multi-year, self-directed teaching artefact that never appears in his LinkedIn About or Experience, which lists only jobs and the newsletter; that's what the resume hides, and it's my nominee for the one project. INFERENCE: 277 forks plus continuous updates on a personal textbook is real external adoption signal even though the packet notes 'No README text captured for any repo' -- that's a Not Visible packet gap, not evidence of absence, so senior_engineer's 'no signal' on code quality overstates it; I'd call craft 4/5 on adoption evidence alone, pending an actual source read. PACKET FACT: colloquium is 'A markdown native slides tool for academics building with agents,' 298 stars, Python, MIT -- that's a thread on agent-adjacent tooling, not proof of legal multi-step agent-harness work, so ai_evaluator's 'zero footprint' should soften to 'no footprint on tool/subagent/retrieval orchestration specifically.' The curiosity trail is real and widening: mems-bo and dynamicslearn (PhD-era robotics) to rlhf-book and reward-bench (LLM post-training) to dgx-spark-setup (GB10 Blackwell, CUDA 13, updated Feb 2026) shows learning velocity across artefacts that job titles alone don't capture. Verdict: Strong talent on self-taught depth and learning velocity; the resolving artefact is the actual rlhf-book build/source or a colloquium commit, to confirm craft directly instead of inferring it from stars and forks.",
+      "verdict": "Strong talent",
+      "confidence": 60,
+      "packet_density": "Dense",
+      "changed": false,
+      "changed_on": "",
+      "cites": [
+        "rlhf-book Public / Textbook on reinforcement learning from human feedback / ai alignment rlhf / Python 2,405 277 Other Updated 2 weeks ago",
+        "colloquium Public / A markdown native slides tool for academics building with agents. / education slides / Python 298 18 MIT License Updated 2 weeks ago",
+        "dgx-spark-setup Public / Setup guide for ML training on NVIDIA DGX Spark (GB10 Blackwell, CUDA 13, aarch64) / Shell 182 16 Updated on Feb 26",
+        "blogcaster Public archive / Python tools for easily translating your blog content to podcasts & YouTube / blogging podcasts substack / Python 209 17 Apache License 2.0 Updated on Sep 5, 2024",
+        "No README text captured for any repo.",
+        "dynamicslearn Public / Working directory for dynamics learning for experimental robots. / Python 57 19 MIT License Updated on Aug 22",
+        "mems-bo Public archive / Bayesian Optimization of MEMs design / Python 5 1 Updated on Dec 21, 2020"
+      ],
+      "background_used": [
+        "GitHub star and fork counts, plus a sustained multi-year update cadence, are a community-adoption/quality signal on their own even without reading source, though they are not a substitute for reading actual code, tests, or commit hygiene."
+      ],
+      "question_for": null,
+      "resolving_question": "Pull rlhf-book's actual source/build tooling or a colloquium commit history to verify code quality and craft directly, rather than inferring it from 2,405 stars and 277 forks."
+    },
+    "engineering_manager": {
+      "seat": "engineering_manager",
+      "text": "ENVIRONMENT MATCH: closest prior environment is Hugging Face, and even that is an open-source infrastructure company building community tools ('Research Scientist & RLHF Team Lead'), not a post-PMF commercial product shipping to paying enterprise customers under a governance frontier; everywhere else on the packet is a nonprofit lab ('Researching RLHF and fine-tuning LLMs in the open and for the common good' at AI2) or his own media business ('Founder \u2014 Interconnects AI ... Cutting edge AI research and news in your inbox'). There is zero visible time in an environment where cost/latency/security/governance trade-offs against a shipped product mattered, which is exactly the frontier this seat optimizes against. PROBLEM MATCH: he has clearly solved the post-training class of problem repeatedly ('T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training,' first author, 1481 cites), but the specific problem this role is built around \u2014 'success is measured by model and agent work product on legal tasks, not by publications' \u2014 is the one thing his entire visible record runs against; in his own words, 'My goal is to building the foundation of the open science of language models, particularly in post-training,' which is close to the inverse of the JD's stated success metric. RAMP: technical ramp is short, I'd estimate 8-12 weeks given the density of hands-on post-training reps (Tulu, OLMo, RewardBench); the real ramp risk isn't skill, it's regime change \u2014 learning to be scored on shipped legal-product outcomes instead of papers, newsletter reach, and Congressional testimony ('I was asked by Congressional staff to share my views on open models') \u2014 and that is not a gap that closes on a fixed timeline. OWNERSHIP: clearly Led/Shipped, not 'worked on' \u2014 first author on T\u00fclu 3 and RewardBench, titled 'RLHF Team Lead' at HF, 'co-leading Olmo' at AI2. OVER-QUALIFICATION and biggest risk: this is a scope drop from team-lead/co-lead to a no-reports IC seat, landing on someone simultaneously headlined as founding his own research org \u2014 the biggest risk isn't capability, it's that the mission doesn't hold him past the first quarter where a good result produces a shipped legal feature instead of a blog post or a citation.",
+      "verdict": "Screen",
+      "confidence": 38,
+      "packet_density": "Dense",
+      "changed": false,
+      "changed_on": "",
+      "cites": [
+        "Research Scientist & RLHF Team Lead \u2014 Hugging Face",
+        "Researching RLHF and fine-tuning LLMs in the open and for the common good with AllenNLP.",
+        "Founder \u2014 Interconnects AI ... Cutting edge AI research and news in your inbox.",
+        "success is measured by model and agent work product on legal tasks, not by publications",
+        "My goal is to building the foundation of the open science of language models, particularly in post-training.",
+        "T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training",
+        "I was asked by Congressional staff to share my views on open models performance, adoption, and competition vis a vis China.",
+        "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)"
+      ],
+      "background_used": [
+        "AI2 is a nonprofit research lab; Hugging Face is an open-source infrastructure company; neither is structured around shipping a proprietary product to paying enterprise customers under a cost/latency/security/governance frontier, which is the operating context this JD describes."
+      ],
+      "question_for": "people_partner",
+      "resolving_question": "Has he ever, anywhere in his career, been evaluated on a shipped product outcome rather than a publication, benchmark, or public research artifact \u2014 and if not, is he telling us in the interview that he wants that regime change, or just that he needs a job while the stealth venture is paused?"
     }
   },
   "state_of_meeting": null,
-  "corrections": [],
+  "corrections": [
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "ai_evaluator claims Tulu 3 'covers SFT/DPO/RLVR' as a packet fact but the packet lists only title and citations, not methods covered. Also, TRL is cited as 'production research Python' via co-authorship without specifying what code Lambert wrote or his role. dgx-spark-setup is described in the packet as Shell language setup guide, not Python.",
+      "missing_from_packet": [
+        "What methods Tulu 3 covers (SFT/DPO/RLVR is not stated in the paper listing)"
+      ],
+      "background": [
+        "That Tulu 3 covers SFT/DPO/RLVR \u2014 this is external knowledge of the paper's content, not packet text"
+      ],
+      "inference": [
+        {
+          "statement": "production research Python via TRL itself",
+          "inferred_from": "Co-authorship on [Github] Trl (1066 citations) but no specification of what code he wrote or his role"
+        },
+        {
+          "statement": "agent harness/tool/subagent engineering has zero footprint across repos",
+          "inferred_from": "Examination of 26 listed repositories and 20 Scholar papers for absence of agent-harness work"
+        }
+      ],
+      "downgrade": [
+        {
+          "seat": "ai_evaluator",
+          "item": "TRL co-authorship as 'production research Python' and production training code",
+          "from": "Packet shows co-author status only; co-authorship of a library does not specify what code he contributed"
+        },
+        {
+          "seat": "ai_evaluator",
+          "item": "dgx-spark-setup as 'production research Python'",
+          "from": "Packet describes it: 'Setup guide... Shell' (line 276-278), not Python research code"
+        }
+      ]
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "open_source_dev: rlhf-book is characterized as 'sustained, multi-year' but the packet provides only 'Updated 2 weeks ago' with no creation date or update history. Also, 'continuous updates' is cited as evidence but the packet shows only one update date, not a history. Minor: dgx-spark-setup is stated as 'updated Feb 2026' but the packet says only 'Updated on Feb 26' without the year explicit.",
+      "missing_from_packet": [],
+      "background": [
+        "Multi-year sustained GitHub repositories with high fork counts typically indicate real community adoption"
+      ],
+      "inference": [
+        {
+          "statement": "rlhf-book is a sustained, multi-year artefact",
+          "inferred_from": "Single 'Updated 2 weeks ago' date; no creation date or historical pattern in packet"
+        },
+        {
+          "statement": "continuous updates on rlhf-book",
+          "inferred_from": "277 forks and single 'Updated 2 weeks ago' date do not show update continuity"
+        },
+        {
+          "statement": "dgx-spark-setup was updated Feb 2026",
+          "inferred_from": "Packet states 'Updated on Feb 26' without explicit year; 2026 is inferred from capture date"
+        }
+      ],
+      "downgrade": []
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "Engineering_manager states 'everywhere else on the packet is a nonprofit lab or his own media business,' but the packet includes a Research Scientist Intern role at DeepMind (May 2021\u2013Oct 2021).",
+      "missing_from_packet": [],
+      "background": [
+        "AI2 is a nonprofit research lab; Hugging Face is an open-source infrastructure company; neither is structured around shipping a proprietary product to paying enterprise customers under a cost/latency/security/governance frontier"
+      ],
+      "inference": [
+        {
+          "statement": "Zero visible time in an environment where cost/latency/security/governance trade-offs against a shipped product mattered",
+          "inferred_from": "Absence of commercial product environment mentions in packet"
+        },
+        {
+          "statement": "Technical ramp is 8-12 weeks",
+          "inferred_from": "Inferred from density of hands-on post-training reps but not stated in packet"
+        },
+        {
+          "statement": "The real ramp risk is regime change\u2014learning to be scored on shipped legal-product outcomes instead of papers",
+          "inferred_from": "Inferred from pattern of publications/visibility work vs. role's success metrics, not directly stated"
+        }
+      ],
+      "downgrade": []
+    }
+  ],
   "last_speakers": [
-    "people_partner",
-    "ai_evaluator"
+    "open_source_dev",
+    "engineering_manager"
   ]
 }
