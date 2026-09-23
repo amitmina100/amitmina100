@@ -9,12 +9,12 @@
     "open_source_dev",
     "science_lead"
   ],
-  "turn": 9,
+  "turn": 10,
   "speak_count": {
     "people_partner": 2,
     "ai_evaluator": 2,
     "senior_engineer": 2,
-    "open_source_dev": 1,
+    "open_source_dev": 2,
     "engineering_manager": 1,
     "science_lead": 1
   },
@@ -88,26 +88,25 @@
     },
     "open_source_dev": {
       "seat": "open_source_dev",
-      "text": "PACKET FACT: rlhf-book is 'Textbook on reinforcement learning from human feedback,' Python, 2,405 stars, 277 forks, 'Updated 2 weeks ago' -- a sustained, multi-year, self-directed teaching artefact that never appears in his LinkedIn About or Experience, which lists only jobs and the newsletter; that's what the resume hides, and it's my nominee for the one project. INFERENCE: 277 forks plus continuous updates on a personal textbook is real external adoption signal even though the packet notes 'No README text captured for any repo' -- that's a Not Visible packet gap, not evidence of absence, so senior_engineer's 'no signal' on code quality overstates it; I'd call craft 4/5 on adoption evidence alone, pending an actual source read. PACKET FACT: colloquium is 'A markdown native slides tool for academics building with agents,' 298 stars, Python, MIT -- that's a thread on agent-adjacent tooling, not proof of legal multi-step agent-harness work, so ai_evaluator's 'zero footprint' should soften to 'no footprint on tool/subagent/retrieval orchestration specifically.' The curiosity trail is real and widening: mems-bo and dynamicslearn (PhD-era robotics) to rlhf-book and reward-bench (LLM post-training) to dgx-spark-setup (GB10 Blackwell, CUDA 13, updated Feb 2026) shows learning velocity across artefacts that job titles alone don't capture. Verdict: Strong talent on self-taught depth and learning velocity; the resolving artefact is the actual rlhf-book build/source or a colloquium commit, to confirm craft directly instead of inferring it from stars and forks.",
-      "verdict": "Strong talent",
-      "confidence": 60,
+      "text": "Conceding the epistemics point without argument, per the rule: stars and forks are adoption/reach signals, not code-quality signals, and I stated my 4/5 as if it were read-from-source when it was inferred from counts -- I'm downgrading craft to no signal, pending an actual read of rlhf-book's source or a commit/PR diff, same bar senior_engineer is holding. But senior_engineer's 'likely book-build tooling rather than training-loop code' doesn't get a pass either -- fact_checker logged that exact line as inference, not packet fact, so neither of us can score the Python from the listing alone; that's a real stalemate on craft, not a win for 'reject the underdog case.' What survives that stalemate and doesn't depend on a craft number: the curiosity trail is dated and topically real -- mems-bo and dynamicslearn (PhD-era robotics, archived 2020/2022) to rlhf-book and reward-bench (LLM post-training, active) to dgx-spark-setup ('Setup guide for ML training on NVIDIA DGX Spark... Updated on Feb 26') -- and rlhf-book's 2,405 stars / 277 forks never appear anywhere in his LinkedIn About or Experience, which is what the resume hides regardless of what's inside the repo. On the record: one project is rlhf-book (best candidate for it, unverified against colloquium); self-taught evidence is the PhD-to-LLM-to-hardware curiosity arc plus TRL/reward-bench as contribution-to-others' work threads; craft is now no signal, not 4/5, honestly corrected; learning velocity is real and multi-domain; the underdog case is breadth and contribution pattern, not a code-quality claim I can currently back. Verdict softens to Solid, confidence 48, and the resolving artefact is unchanged: pull actual source or commit history from rlhf-book or colloquium.",
+      "verdict": "Solid",
+      "confidence": 48,
       "packet_density": "Dense",
-      "changed": false,
-      "changed_on": "",
+      "changed": true,
+      "changed_on": "senior_engineer's correction that stars/forks measure adoption not code quality, and fact_checker's confirmation that 'likely book-build tooling' is inference on both sides -- craft moves from a claimed 4/5 to no signal, and verdict softens from Strong talent to Solid to match.",
       "cites": [
         "rlhf-book Public / Textbook on reinforcement learning from human feedback / ai alignment rlhf / Python 2,405 277 Other Updated 2 weeks ago",
-        "colloquium Public / A markdown native slides tool for academics building with agents. / education slides / Python 298 18 MIT License Updated 2 weeks ago",
+        "colloquium Public / A markdown native slides tool for academics building with agents. / education slides / Python 298 18 MIT License",
         "dgx-spark-setup Public / Setup guide for ML training on NVIDIA DGX Spark (GB10 Blackwell, CUDA 13, aarch64) / Shell 182 16 Updated on Feb 26",
-        "blogcaster Public archive / Python tools for easily translating your blog content to podcasts & YouTube / blogging podcasts substack / Python 209 17 Apache License 2.0 Updated on Sep 5, 2024",
-        "No README text captured for any repo.",
+        "mems-bo Public archive / Bayesian Optimization of MEMs design / Python 5 1 Updated on Dec 21, 2020",
         "dynamicslearn Public / Working directory for dynamics learning for experimental robots. / Python 57 19 MIT License Updated on Aug 22",
-        "mems-bo Public archive / Bayesian Optimization of MEMs design / Python 5 1 Updated on Dec 21, 2020"
+        "No README text captured for any repo."
       ],
       "background_used": [
-        "GitHub star and fork counts, plus a sustained multi-year update cadence, are a community-adoption/quality signal on their own even without reading source, though they are not a substitute for reading actual code, tests, or commit hygiene."
+        "GitHub star and fork counts measure community adoption/reach, not code quality; assessing craft requires reading source, tests, or commit/PR history, which the packet does not capture."
       ],
       "question_for": null,
-      "resolving_question": "Pull rlhf-book's actual source/build tooling or a colloquium commit history to verify code quality and craft directly, rather than inferring it from 2,405 stars and 277 forks."
+      "resolving_question": "Pull rlhf-book's actual source/build tooling or a colloquium commit history -- until someone reads code, craft is no signal for both the case and the rebuttal, not a settled 4/5 or a settled 'just book-build tooling.'"
     },
     "engineering_manager": {
       "seat": "engineering_manager",
@@ -296,7 +295,7 @@
     }
   ],
   "last_speakers": [
-    "ai_evaluator",
-    "senior_engineer"
+    "senior_engineer",
+    "open_source_dev"
   ]
 }
