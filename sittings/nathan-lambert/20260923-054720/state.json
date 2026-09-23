@@ -9,13 +9,13 @@
     "open_source_dev",
     "science_lead"
   ],
-  "turn": 10,
+  "turn": 11,
   "speak_count": {
     "people_partner": 2,
     "ai_evaluator": 2,
     "senior_engineer": 2,
     "open_source_dev": 2,
-    "engineering_manager": 1,
+    "engineering_manager": 2,
     "science_lead": 1
   },
   "seats": {
@@ -110,27 +110,24 @@
     },
     "engineering_manager": {
       "seat": "engineering_manager",
-      "text": "ENVIRONMENT MATCH: closest prior environment is Hugging Face, and even that is an open-source infrastructure company building community tools ('Research Scientist & RLHF Team Lead'), not a post-PMF commercial product shipping to paying enterprise customers under a governance frontier; everywhere else on the packet is a nonprofit lab ('Researching RLHF and fine-tuning LLMs in the open and for the common good' at AI2) or his own media business ('Founder \u2014 Interconnects AI ... Cutting edge AI research and news in your inbox'). There is zero visible time in an environment where cost/latency/security/governance trade-offs against a shipped product mattered, which is exactly the frontier this seat optimizes against. PROBLEM MATCH: he has clearly solved the post-training class of problem repeatedly ('T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training,' first author, 1481 cites), but the specific problem this role is built around \u2014 'success is measured by model and agent work product on legal tasks, not by publications' \u2014 is the one thing his entire visible record runs against; in his own words, 'My goal is to building the foundation of the open science of language models, particularly in post-training,' which is close to the inverse of the JD's stated success metric. RAMP: technical ramp is short, I'd estimate 8-12 weeks given the density of hands-on post-training reps (Tulu, OLMo, RewardBench); the real ramp risk isn't skill, it's regime change \u2014 learning to be scored on shipped legal-product outcomes instead of papers, newsletter reach, and Congressional testimony ('I was asked by Congressional staff to share my views on open models') \u2014 and that is not a gap that closes on a fixed timeline. OWNERSHIP: clearly Led/Shipped, not 'worked on' \u2014 first author on T\u00fclu 3 and RewardBench, titled 'RLHF Team Lead' at HF, 'co-leading Olmo' at AI2. OVER-QUALIFICATION and biggest risk: this is a scope drop from team-lead/co-lead to a no-reports IC seat, landing on someone simultaneously headlined as founding his own research org \u2014 the biggest risk isn't capability, it's that the mission doesn't hold him past the first quarter where a good result produces a shipped legal feature instead of a blog post or a citation.",
+      "text": "Conceding the DeepMind point without argument: fact_checker is right that 'Research Scientist Intern \u2014 DeepMind... May 2021 - Oct 2021... working with the controls team on robotics, RL' means 'everywhere else is a nonprofit lab' was overstated \u2014 relabeling to 'everywhere else is a nonprofit lab, an open-source infra company, or a six-month pre-PhD-completion robotics internship,' which doesn't change the substance since that internship is controls/robotics, not LLM post-training under commercial constraints. On science_lead's challenge, the correction lands: T\u00fclu and OLMo being shipped open-weight model families, not just papers, is a fair read and I'm raising problem-match on the core loop \u2014 data, environments, graders, training recipes, ship a model \u2014 to DEMONSTRATED rather than paper-only. But 'shipped' there means shipped to the open-weight research community for citation and adoption, not shipped against 'a cost / latency / security / governance Pareto frontier' for a paying enterprise customer, which is the specific frontier the JD names and which nothing in the packet \u2014 including the GRPO post, credited only to 'Michael (my first research intern)' with no employer or product named \u2014 puts him inside. I'll count the GRPO post as current, first-person hands-on training evidence and tighten my technical-ramp estimate to 6-10 weeks accordingly, but it doesn't touch the environment-match or regime-change risk I flagged last turn, so verdict stays Screen, confidence moves 38 to 44.",
       "verdict": "Screen",
-      "confidence": 38,
+      "confidence": 44,
       "packet_density": "Dense",
-      "changed": false,
-      "changed_on": "",
+      "changed": true,
+      "changed_on": "fact_checker's correction that the DeepMind internship exists (relabeling my 'everywhere else is a nonprofit lab' claim), and science_lead's point that T\u00fclu/OLMo are shipped open-weight model families rather than papers-only, which raises problem-match on the core post-training loop from CLAIMED to DEMONSTRATED while leaving the cost/latency/security/governance-constrained-product gap and the GRPO post's unstated employer unresolved.",
       "cites": [
-        "Research Scientist & RLHF Team Lead \u2014 Hugging Face",
-        "Researching RLHF and fine-tuning LLMs in the open and for the common good with AllenNLP.",
-        "Founder \u2014 Interconnects AI ... Cutting edge AI research and news in your inbox.",
-        "success is measured by model and agent work product on legal tasks, not by publications",
-        "My goal is to building the foundation of the open science of language models, particularly in post-training.",
-        "T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training",
-        "I was asked by Congressional staff to share my views on open models performance, adoption, and competition vis a vis China.",
-        "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)"
+        "Research Scientist Intern \u2014 DeepMind \u00b7 Internship / May 2021 - Oct 2021 \u00b7 6 mos / Working with the controls team on robotics, RL, and other machine learning research.",
+        "We did this: If your GRPO group has all wrong completions, sample more with probability P (~0.9)",
+        "Congrats to Michael (my first research intern) and a fun collaboration.",
+        "against a cost / latency / security / governance Pareto frontier"
       ],
       "background_used": [
-        "AI2 is a nonprofit research lab; Hugging Face is an open-source infrastructure company; neither is structured around shipping a proprietary product to paying enterprise customers under a cost/latency/security/governance frontier, which is the operating context this JD describes."
+        "DeepMind's controls/robotics research internship track is closer in kind to AI2/Berkeley research work than to shipping a governed commercial product; it doesn't establish enterprise-product environment match even though it corrects the 'nonprofit lab everywhere' claim.",
+        "Open-weight model releases (T\u00fclu, OLMo) are shipped artifacts judged by community adoption and citation, which is a different shipping discipline than optimizing a model against cost/latency/security/governance constraints for a paying customer."
       ],
       "question_for": "people_partner",
-      "resolving_question": "Has he ever, anywhere in his career, been evaluated on a shipped product outcome rather than a publication, benchmark, or public research artifact \u2014 and if not, is he telling us in the interview that he wants that regime change, or just that he needs a job while the stealth venture is paused?"
+      "resolving_question": "In the recruiter call, ask directly: has he ever been asked to trade model quality against cost, latency, or security/governance constraints for a paying customer \u2014 and separately, is the GRPO 'first research intern' post inside his own stealth org (making the availability problem people_partner is flagging even sharper) or a fresh AI2/collaborator artifact?"
     },
     "science_lead": {
       "seat": "science_lead",
@@ -292,10 +289,24 @@
         }
       ],
       "downgrade": []
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "open_source_dev: dynamicslearn is listed as 'Public' in the candidate file, not archived; reward-bench is listed as 'Forked from allenai/reward-bench', making the characterization as 'contribution-to-others' work' unsupported by the packet.",
+      "missing_from_packet": [],
+      "background": [],
+      "inference": [
+        {
+          "statement": "reward-bench qualifies as a contribution-to-others' work thread",
+          "inferred_from": "Candidate file shows it is 'Forked from allenai/reward-bench'; a fork of someone else's repo is not inherently a contribution to their work without evidence of specific contributions made to the fork"
+        }
+      ],
+      "downgrade": []
     }
   ],
   "last_speakers": [
-    "senior_engineer",
-    "open_source_dev"
+    "open_source_dev",
+    "engineering_manager"
   ]
 }
