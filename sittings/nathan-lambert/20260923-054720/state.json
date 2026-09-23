@@ -9,9 +9,9 @@
     "open_source_dev",
     "science_lead"
   ],
-  "turn": 16,
+  "turn": 17,
   "speak_count": {
-    "people_partner": 3,
+    "people_partner": 4,
     "ai_evaluator": 3,
     "senior_engineer": 3,
     "open_source_dev": 2,
@@ -21,27 +21,25 @@
   "seats": {
     "people_partner": {
       "seat": "people_partner",
-      "text": "Putting comp and retention on the record: PACKET FACT the band is '$231,000 \u2013 $340,000 base, plus equity and bonus' with 'BAND STRETCH: not stated in the JD... treat $340K as the top,' and the role's own LEVEL line calls this 'senior-to-staff IC' \u2014 yet the candidate's demonstrated scope is 'Senior Research Scientist,' 'RLHF Team Lead' at HuggingFace, 'co-leading Olmo' at AI2, first-author on Tulu 3 (1481 cites) and RewardBench, plus a 40,357-follower public platform and Congressional testimony on open models. INFERENCE (BACKGROUND: senior/staff research profiles with team-lead or co-lead titles, flagship first-author papers, and this level of public visibility typically command well above $340K base at comparable well-funded AI companies, before equity): this reads as beyond-stretch, not within-stretch over-experience, and nothing in the role file signals the hiring manager will move the band that far for a no-reports IC seat. That comp gap combines with the title drop from team-lead/co-lead to IC and a seat with no stated growth path back into leadership \u2014 the hard-flag combination my lens is built to name \u2014 and it sits on top of a founder ambition that is evidenced rather than assumed ('I'm starting a new research organization around open language models,' present tense, plus 'my first research intern'), which is itself the primary 24-month retention driver, alongside seat size (no reports, no path back to leading an org) and the comp gap; Seattle-versus-SF-hybrid is a secondary driver. I'm moving from 'Not assessable' to Misaligned on the comp/seat-fit axis specifically \u2014 capability was never in question \u2014 while the recruiter-call question of whether he's actually available (live venture vs. paused, and why he'd trade it for this seat) stays open and unresolved by anything currently on record.",
+      "text": "Direct answer to the Chair's flip question: it's a number, not a felt sense of what profiles 'typically command.' Downward, into an evidenced hard flag: if in the recruiter call he names a required or expected base above $340K, that single fact converts my background estimate into a packet fact, and combined with the already-factual title drop -- 'Senior Research Scientist,' 'RLHF Team Lead' at Hugging Face, 'co-leading Olmo' at AI2, into a no-reports IC seat -- it hardens the comp-plus-title-drop combination without needing any inference from silence. Upward, back to Screen on my axis specifically: if he confirms a base inside $231K-$340K works because the mission and compute are the draw, and separately confirms the stealth venture is paused or shelved rather than live-and-funded -- both remove the comp-gap fact and the retention driver -- I return to Screen, deferring to engineering_manager's environment-match question and senior_engineer's Python-craft gap, which are not mine to resolve, so I would not call that combination Aligned outright since those other flags stand independent of me. This is not a principle objection to a founder mid-build: a live, well-funded founder taking a title and comp cut for a narrower seat is a real, evidenced retention risk regardless of who they are, and a band-priced, paused-venture answer removes that risk cleanly -- there is a real answer in each direction, so my verdict is not fixed against him.",
       "verdict": "Misaligned",
-      "confidence": 58,
+      "confidence": 55,
       "packet_density": "Dense",
-      "changed": true,
-      "changed_on": "First explicit comp calibration and 24-month retention read against the role's stated band/stretch ($231K-$340K base, stretch unset) and level ('senior-to-staff IC') \u2014 moves verdict from 'Not assessable - ask in recruiter call' (turn 7, availability-only) to 'Misaligned' because the comp-vs-experience and seat-that-can't-grow combination is now itself a hard flag independent of the unresolved availability question.",
+      "changed": false,
+      "changed_on": "",
       "cites": [
         "Comp: $231,000 \u2013 $340,000 base, plus equity and bonus.",
-        "BAND STRETCH: not stated in the JD. Until the hiring manager sets one, treat $340K as the top and any candidate needing more as beyond stretch",
-        "LEVEL (inference, not stated in the JD): senior-to-staff IC.",
+        "BAND STRETCH: not stated in the JD. Until the hiring manager sets one, treat $340K as the top and any candidate needing more as beyond stretch \u2014 do not assume headroom that the packet does not grant.",
         "Senior Research Scientist \u2014 Allen Institute for AI (AI2)",
         "Research Scientist & RLHF Team Lead \u2014 Hugging Face",
         "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)",
-        "I'm starting a new research organization around open language models.",
-        "40,357 followers"
+        "I'm starting a new research organization around open language models."
       ],
       "background_used": [
-        "Senior/staff research profiles with team-lead or co-lead titles, flagship first-author papers, and this level of public visibility (newsletter reach, Congressional testimony) typically command base compensation well above $340K at comparable well-funded AI companies, before equity or bonus."
+        "Senior/staff research profiles with team-lead or co-lead titles at well-funded AI companies typically command base comp at or above the top of a $231K-$340K band before equity -- this is the background estimate that a stated number in the recruiter call would confirm or refute as fact."
       ],
       "question_for": null,
-      "resolving_question": "In the recruiter call: what base comp would he actually accept, and is the stealth venture live and staffed or paused \u2014 if the answer is anywhere near or above $340K and the venture is live, this seat is not reachable at any realistic band move."
+      "resolving_question": "In the recruiter call: what base would he actually accept, and is the stealth venture live-and-funded or paused/shelved -- a number above $340K plus a live venture hardens to an evidenced Misaligned; a band-acceptable number plus a paused venture returns this to Screen on the comp/retention axis."
     },
     "ai_evaluator": {
       "seat": "ai_evaluator",
@@ -349,10 +347,54 @@
         }
       ],
       "downgrade": []
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "Senior Engineer: 'his own original Python repos' assertion about mbrl-lib\u2014the packet lists it only as 'Public archive' and 'Library for Model Based RL' (line 300-302) without indicating whether it's original or a copy. Also, 'research engineer, not research scientist' is not the JD's explicit non-negotiable; line 18 lists three non-negotiables, and this phrase appears as an IS characteristic (line 49), not among them.",
+      "missing_from_packet": [],
+      "background": [
+        "GitHub star/fork counts measure community adoption/reach, not code quality; assessing craft requires reading source, tests, or commit/PR history, none of which the packet captured",
+        "Sixth-of-six-author co-authorship credit on a library repo establishes contribution recognition, not evidence of what code the person personally wrote or maintains"
+      ],
+      "inference": [
+        {
+          "statement": "weight-changing post-training is OWNED",
+          "inferred_from": "Tulu 3 first-authorship, RLHF Team Lead title, co-leading Olmo, RewardBench first-authorship, GRPO post"
+        },
+        {
+          "statement": "grader/reward-as-first-class-artefact is OWNED",
+          "inferred_from": "RewardBench work directly instantiates the JD's 'grader-craft' language applied to reward models"
+        },
+        {
+          "statement": "trace-level judgment is OWNED on generative completions and reward-model preference data but Not Visible on multi-step agent transcripts",
+          "inferred_from": "RewardBench (reward data) and Tulu posts (completions judgment) present; no packet evidence for agent transcript analysis"
+        },
+        {
+          "statement": "Production research Python is Unverifiable",
+          "inferred_from": "'No README text captured for any repo', dgx-spark-setup is Shell not Python, dynamicslearn and continuousprediction are PhD-era robotics work, TRL is sixth-author credit with no described contribution"
+        }
+      ],
+      "downgrade": []
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "people_partner: 'no-reports IC seat' characterizes Harvey without citing a packet statement. The role file says 'IC applied-research role' and 'self-managing seat' but explicitly marks the inference about reports and level as inference, not stated fact. The phrase 'no-reports' does not appear in the ground truth section.",
+      "missing_from_packet": [],
+      "background": [],
+      "inference": [],
+      "downgrade": [
+        {
+          "seat": "people_partner",
+          "item": "Harvey is a no-reports IC seat",
+          "from": "Not stated as fact in role file; marked as inference in lines 25-27"
+        }
+      ]
     }
   ],
   "last_speakers": [
-    "engineering_manager",
-    "senior_engineer"
+    "senior_engineer",
+    "people_partner"
   ]
 }
