@@ -9,11 +9,11 @@
     "open_source_dev",
     "science_lead"
   ],
-  "turn": 15,
+  "turn": 16,
   "speak_count": {
     "people_partner": 3,
     "ai_evaluator": 3,
-    "senior_engineer": 2,
+    "senior_engineer": 3,
     "open_source_dev": 2,
     "engineering_manager": 3,
     "science_lead": 2
@@ -69,24 +69,29 @@
     },
     "senior_engineer": {
       "seat": "senior_engineer",
-      "text": "Pushing back, not backing down: stars and forks are a popularity/adoption metric, not a code-quality metric \u2014 those are two different axes on my own rubric, and open_source_dev's 4/5 is inferred from counts, not from a single line of source read, which is a CLAIMED-not-DEMONSTRATED move the same way TRL co-authorship was. The packet is explicit that this inference has no floor under it: 'No README text captured for any repo,' and fact_checker has now confirmed 'the packet shows only a single update date, no history' \u2014 so 'sustained, multi-year' engineering discipline was never demonstrated either, only a snapshot. There's also a category problem open_source_dev's number glosses over: rlhf-book is tagged 'Textbook on reinforcement learning from human feedback' \u2014 likely book-build tooling around prose content, not the production training-loop Python the JD's disambiguation triad actually asks about \u2014 so even a good-faith read of adoption doesn't obviously transfer to 'clean Python, debuggable experiments' for post-training specifically. I'm not moving off 'code quality: no signal' \u2014 that stands until someone reads source, a commit, or a PR diff \u2014 but ai_evaluator's concession that the Python leg is thinner sharpens rather than resolves my concern, so verdict stays Unverifiable - request code, confidence 58 (up slightly, since the room's own corrections have converged on my original read rather than away from it).",
+      "text": "Final classification against the disambiguation triad: weight-changing post-training is OWNED (Tulu 3 first-author, 'RLHF Team Lead' at HF, 'co-leading Olmo' at AI2, RewardBench first-author, the 1-week-old GRPO post); grader/reward-as-first-class-artefact is OWNED ('RewardBench: Evaluating reward models' is literally the JD's grader-craft language applied to reward models); trace-level judgment is OWNED on generative completions and reward-model preference data but Not Visible on multi-step agent transcripts; harness-as-tunable-surface is Not Visible, and I agree with ai_evaluator that for the stealth-org window specifically this reads as packet-thin rather than demonstrated-absent, since that employer is one headline with no work content. Production research Python is the leg still Unverifiable, and contra a 'blind on last two years' framing, that specific gap is not a recency problem: 'No README text captured for any repo' spans all 26 listed repos across his whole career, TRL is sixth-of-six-author co-authorship with no described contribution, dgx-spark-setup is confirmed Shell not Python, and his own original Python repos (dynamicslearn, mbrl-lib, continuousprediction) are pre-LLM PhD robotics work rather than post-training code \u2014 so this is a packet-capture failure on the entire record, making it a genuine blocking artefact for the JD's explicit 'research engineer, not research scientist' non-negotiable, not a screen-call nicety. Verdict stays Unverifiable - request code, confidence 60; the artefact that resolves it either way is a commit, PR diff, or source file he personally authored \u2014 in TRL, a Tulu/OLMo post-training recipe, or rlhf-book.",
       "verdict": "Unverifiable - request code",
-      "confidence": 58,
+      "confidence": 60,
       "packet_density": "Dense",
       "changed": false,
       "changed_on": "",
       "cites": [
-        "rlhf-book Public / Textbook on reinforcement learning from human feedback / ai alignment rlhf / Python 2,405 277 Other Updated 2 weeks ago",
+        "T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training ... 1481* 2024",
+        "Rewardbench: Evaluating reward models for language modeling ... 840 2025",
+        "Machine learning research scientist & reinforcement learning from human feedback (RLHF) team-lead.",
+        "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)",
         "No README text captured for any repo.",
-        "the packet shows only a single update date, no history",
-        "I'd call craft 4/5 on adoption evidence alone, pending an actual source read"
+        "[Github] Trl: Transformer reinforcement learning / L von Werra, Y Belkada, L Tunstall, E Beeching, T Thrush, N Lambert",
+        "dgx-spark-setup Public / Setup guide for ML training on NVIDIA DGX Spark ... Shell 182 16",
+        "dynamicslearn Public / Working directory for dynamics learning for experimental robots. / Python 57 19",
+        "rlhf-book Public / Textbook on reinforcement learning from human feedback / Python 2,405 277"
       ],
       "background_used": [
-        "GitHub star and fork counts measure community adoption/reach of a repo, not the quality of its code \u2014 a widely-forked project can still have weak engineering craft; assessing craft requires reading source, tests, or commit/PR history, none of which the packet captured.",
-        "A repo tagged 'Textbook on RLHF' is plausibly book-build tooling around prose/notebook content rather than production training-loop code, so even strong adoption evidence there doesn't automatically transfer to the JD's specific ask of clean, debuggable post-training research Python."
+        "GitHub star/fork counts measure community adoption/reach, not code quality; assessing craft requires reading source, tests, or commit/PR history, none of which the packet captured for any of his 26 repos.",
+        "Sixth-of-six-author co-authorship credit on a library repo establishes contribution recognition, not evidence of what code the person personally wrote or maintains."
       ],
       "question_for": null,
-      "resolving_question": "Pull actual source, a commit history, or a PR diff from rlhf-book, colloquium, or a TRL/Tulu/OLMo post-training script he personally authored \u2014 until then code quality is no signal, not 4/5, and the Python leg of the disambiguation triad stays unverified."
+      "resolving_question": "Pull one artefact he personally authored end to end \u2014 a TRL commit/PR diff, a Tulu or OLMo post-training recipe script, or rlhf-book source \u2014 to confirm or deny production-grade research Python; this is the single blocking item on an otherwise Owned post-training and grader-craft record."
     },
     "open_source_dev": {
       "seat": "open_source_dev",
@@ -324,10 +329,30 @@
       ],
       "inference": [],
       "downgrade": []
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "Engineering_manager says stealth employer has 'zero lines describing the actual work,' but the ABOUT section states: 'I'm starting a new research organization around open language models. My goal is to building the foundation of the open science of language models, particularly in post-training.' That is not zero lines of description.",
+      "missing_from_packet": [],
+      "background": [
+        "Whether description of organizational mission (post-training focus) constitutes sufficient description of 'actual work' for technical activity assessment"
+      ],
+      "inference": [
+        {
+          "statement": "Organizational environment (non-commercial-product-constrained) can be assessed from title-plus-description at employer level",
+          "inferred_from": "Implicit in distinction between 'coarse' environment question and 'narrow' technical-activity question"
+        },
+        {
+          "statement": "Absence of commercial-product framing across five employers indicates evidence of absence for environment match",
+          "inferred_from": "Pattern across cited employer descriptions (none mention product constraints, commercial focus, or API-based work)"
+        }
+      ],
+      "downgrade": []
     }
   ],
   "last_speakers": [
-    "ai_evaluator",
-    "engineering_manager"
+    "engineering_manager",
+    "senior_engineer"
   ]
 }
