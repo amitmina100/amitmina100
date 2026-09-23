@@ -1,0 +1,77 @@
+{
+  "role": "roles/role - Harvey - Research Engineer, Post-Training.md",
+  "candidate": "candidates/nathan-lambert.md",
+  "seated": [
+    "engineering_manager",
+    "senior_engineer",
+    "people_partner",
+    "ai_evaluator",
+    "open_source_dev",
+    "science_lead"
+  ],
+  "turn": 2,
+  "speak_count": {
+    "people_partner": 1,
+    "ai_evaluator": 1
+  },
+  "seats": {
+    "people_partner": {
+      "seat": "people_partner",
+      "text": "PACKET FACT: the headline is 'Building Open Language Models @ (stealth)' and the About opens 'I'm starting a new research organization around open language models' right after 'I was recently co-leading Olmo... at the Allen Institute for AI' \u2014 the trajectory runs IC to RLHF team lead (Hugging Face, 1.5 yrs) to Olmo co-lead / Senior Research Scientist (AI2, 'Oct 2023 - Jun 2026') to founder, run in parallel the whole time with 'Founder \u2014 Interconnects AI,' 'Jan 2022 - Present,' a newsletter with 40,357 followers on LinkedIn. INFERENCE: slotting him into a no-reports, self-managing IC seat is a scope drop from 'co-lead' and 'team lead,' and the seat shape cuts against demonstrated DNA \u2014 the JD's IS NOT list names 'Research Scientist / post-doc track' and says success is 'model and agent work product on legal tasks, not... publications,' while his About and recent posts (Congressional testimony on open-model competition, a public research newsletter) read as open-science/public-discourse-driven. PACKET FACT: he is Seattle-based ('Seattle, Washington... Remote' at AI2) against an SF-hybrid seat, and the AI2 stint ended about three months before this capture, right when the stealth-founder listing starts \u2014 the packet doesn't say whether he's actually on the market or mid-build/fundraise for his own org, so I can't call comp or retention yet. If he's here because the stealth venture stalled, this is over-experienced-at-band with a real motivation story to get; if he's still building it, this $231K-$340K base IC seat likely isn't reachable at any credible band move \u2014 that's the single question for the recruiter call.",
+      "verdict": "Not assessable - ask in recruiter call",
+      "confidence": 35,
+      "packet_density": "Dense",
+      "changed": false,
+      "changed_on": "",
+      "cites": [
+        "Building Open Language Models @ (stealth)",
+        "I'm starting a new research organization around open language models.",
+        "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)",
+        "Founder \u2014 Interconnects AI, Jan 2022 - Present",
+        "Senior Research Scientist \u2014 Allen Institute for AI (AI2) \u00b7 Full-time, Oct 2023 - Jun 2026",
+        "Seattle, Washington, United States \u00b7 Remote",
+        "Research Scientist / post-doc track. ... the deliverable is a shipped model on the legal product, not novel method or papers.",
+        "success is measured by model and agent work product on legal tasks, not by publications"
+      ],
+      "background_used": [
+        "AI2 (Allen Institute for AI) is a nonprofit research lab; senior research scientists there typically earn below top-of-market frontier-lab comp but often hold significant public/research standing.",
+        "Founding a 'stealth' research organization typically implies active fundraising or early team-building, which is a live time and attention commitment."
+      ],
+      "question_for": null,
+      "resolving_question": "Is he actively job-searching separate from the stealth venture, and would he accept a straight IC seat with no direct reports, SF-hybrid, at $231K-$340K base, given he was Seattle-based and last held 'co-lead' / 'team lead' titles?"
+    },
+    "ai_evaluator": {
+      "seat": "ai_evaluator",
+      "text": "PACKET FACT: the disambiguation rule's three named tests hold up on inspection \u2014 weight-changing post-training via 'Tulu 3: Pushing Frontiers in Open Language Model Post-Training' (first author, 1481 cites, covers SFT/DPO/RLVR) plus TRL ('Transformer reinforcement learning,' co-author on the library the field trains RLHF with) and OLMo/OLMo 2/OLMo 3 co-authorship; production research Python via TRL itself (1066-cite github entry) and 'dgx-spark-setup' (CUDA 13, GB10 Blackwell, current systems work); metric-scepticism/trace-level judgment via RewardBench ('the first evaluation tool for reward models,' first author) which is literally the JD's language \u2014 'whether a metric measures the thing that matters' \u2014 applied to reward models. INFERENCE: but that judgment is demonstrated on model outputs and reward-model preference data, never on multi-step agent transcripts, and the 'agent harness as tunable surface \u2014 tools, subagents, retrieval, validation loops' half of the IS section has zero footprint across 25+ repos and 20 top papers; a packet this dense (full GitHub history since 2017, full pub list) is detailed enough that harness/agent-orchestration work would likely show if it existed at Build depth, so this leans EVIDENCE OF ABSENCE rather than absence-of-evidence, though it's plausible his AI2/HF research-scientist roles simply never required it. PACKET FACT: vintage is excellent and current \u2014 'Never Give Up' GRPO post 1 week ago, Spurious Rewards (RLVR) 2025, OLMo 3 2025/2026 \u2014 this is not a stale record. So the single most important gap is not availability (people_partner's question) but capability shape: strong, current, hands-on general-purpose LLM post-training plus reward-model evaluation, with no visible evidence of agent-harness/tool/subagent engineering or judgment on agentic (versus generative) traces, which the JD treats as core, not nice-to-have.",
+      "verdict": "Strong AI fit",
+      "confidence": 62,
+      "packet_density": "Dense",
+      "changed": false,
+      "changed_on": "",
+      "cites": [
+        "T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training",
+        "[Github] Trl: Transformer reinforcement learning",
+        "Rewardbench: Evaluating reward models for language modeling",
+        "RewardBench: the first evaluation tool for reward models.",
+        "dgx-spark-setup Public - Setup guide for ML training on NVIDIA DGX Spark (GB10 Blackwell, CUDA 13, aarch64)",
+        "OLMo 3",
+        "Spurious rewards: Rethinking training signals in rlvr",
+        "1w ago ... Never Give Up ... GRPO group",
+        "colloquium Public - A markdown native slides tool for academics building with agents.",
+        "Someone who treats the agent harness as tunable surface alongside weights \u2014 tools, subagents, retrieval strategy, validation loops for long-horizon tasks."
+      ],
+      "background_used": [
+        "TRL (Transformer Reinforcement Learning) is HuggingFace's widely-used library for running RLHF/DPO/PPO training loops on LLMs \u2014 this is production infrastructure, not application-layer API usage.",
+        "RewardBench is a benchmark/eval suite for scoring reward models, used across the field to check whether reward models pick up on real preference signal versus spurious correlates."
+      ],
+      "question_for": null,
+      "resolving_question": "Is there any evidence \u2014 even informal, e.g. an interview answer or a private repo \u2014 of Lambert building or reasoning about multi-step agent harnesses (tool use, subagents, retrieval, validation loops) rather than single-turn model post-training, since the packet as captured is silent on this despite being dense everywhere else?"
+    }
+  },
+  "state_of_meeting": null,
+  "corrections": [],
+  "last_speakers": [
+    "people_partner",
+    "ai_evaluator"
+  ]
+}
