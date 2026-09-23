@@ -236,3 +236,241 @@ Other notes:
 - Data derived from the most popular ML arXiv categories: cs. AI, cs. CL, cs. CV, cs. LG, stat. ML
 
 Just like our downloads and derivative model data, this is updated daily on the Interconnects Open Model Dashboard: [link]
+
+# GITHUB
+
+Source: github.com/natolambert?tab=repositories — captured 2026-09-23.
+Raw listing as displayed. Markdown link syntax and GitHub footer navigation
+removed; repo names, descriptions, topics, languages, star/fork counts,
+licenses, fork/archive status and update dates left exactly as shown.
+No README text captured for any repo.
+
+reward-bench Public
+Forked from allenai/reward-bench
+RewardBench: the first evaluation tool for reward models.
+Python Apache License 2.0 Updated last week
+
+rlhf-book Public
+Textbook on reinforcement learning from human feedback
+ai alignment rlhf
+Python 2,405 277 Other Updated 2 weeks ago
+
+colloquium Public
+A markdown native slides tool for academics building with agents.
+education slides
+Python 298 18 MIT License Updated 2 weeks ago
+
+dotfiles Public
+Updated 3 weeks ago
+
+dynamicslearn Public
+Working directory for dynamics learning for experimental robots.
+machine-learning research dynamics quadrotor
+Python 57 19 MIT License Updated on Aug 22
+
+cv Public archive
+Forked from bamos/cv
+My YAML cv and resume.
+TeX 17 6 MIT License Updated on May 11
+
+dgx-spark-setup Public
+Setup guide for ML training on NVIDIA DGX Spark (GB10 Blackwell, CUDA 13, aarch64)
+Shell 182 16 Updated on Feb 26
+
+alpaca_eval Public archive
+Forked from tatsu-lab/alpaca_eval
+An automatic evaluator for instruction-following language models. Human-validated, high-quality, cheap, and fast.
+Jupyter Notebook 1 Apache License 2.0 Updated on May 26, 2025
+
+smol-podcaster Public
+Forked from FanaHOVA/smol-podcaster
+smol-podcaster is your autonomous podcast production intern 🐣
+Python 1 MIT License Updated on Mar 12, 2025
+
+blogcaster Public archive
+Python tools for easily translating your blog content to podcasts & YouTube
+blogging podcasts substack
+Python 209 17 Apache License 2.0 Updated on Sep 5, 2024
+
+continuousprediction Public
+Formulating Model-based RL Dynamics as a continuous rather then one step prediction
+reinforcement-learning robotics prediction pytorch
+Python 36 6 Updated on Aug 25, 2022
+
+mbrl-lib Public archive
+Library for Model Based RL
+Python MIT License Updated on Jul 27, 2022
+
+job-search-viz Public
+A tool for visualization of complex job searches.
+Jupyter Notebook 25 3 Updated on Jul 9, 2022
+
+plotting-basics Public archive
+Collection of lines of code for basics of clean plots in Plotly and Matplotlib
+Python 14 2 Updated on Feb 5, 2021
+
+mems-bo Public archive
+Bayesian Optimization of MEMs design
+Python 5 1 Updated on Dec 21, 2020
+
+robot-ethics-books Public archive
+A collection of readings for one interested in robot ethics.
+5 1 Updated on Jul 15, 2020
+
+model-learning-control Public archive
+Studying papers and how they use learned forward dynamics models for control
+Jupyter Notebook 1 Updated on Jul 1, 2020
+
+si-rl-samples Public archive
+Investigate the sample efficiency of classical system identification with control verses model-free RL.
+Python 1 Updated on Jan 30, 2020
+
+ros-crazyflie-mbrl Public
+Working ROS Directory for MBRL Crazyflie Project
+Makefile 2 5 Updated on Sep 17, 2019
+
+deep-rl-homework Public archive
+Forked from berkeleydeeprlcourse/homework
+Assignments for CS294-112. All work is my own.
+homework deep-reinforcement-learning uc-berkeley
+Python 1 2 MIT License Updated on Dec 21, 2018
+
+crazyflie-firmware-pwm-control Public archive
+Forked from jyaconelli/crazyflie-firmware-pwm-control
+C 2 1 GNU General Public License v3.0 Updated on Oct 4, 2018
+
+swarm-LowPowerCNN Public archive
+Collection of tutorials and scripts working towards and end-to-end CNN for control of microrobots.
+Python 1 Updated on Jun 10, 2018
+
+swarm-Iono-Sim Public archive
+Matlab/Simulink Simulation of Flight of Electrohydrodynamic Thrusted Robot, the Ionocraft
+MATLAB 1 3 Updated on Apr 24, 2018
+
+iddf17-FaceDetection Public archive
+Python Updated on Dec 13, 2017
+
+iddf17-hw3-BalanceShooter Public archive
+Forked from idd-fall17/hw3-ghosh-kasi-lambert
+hw3-ghosh-kasi-lambert created by GitHub Classroom
+Java Apache License 2.0 Updated on Dec 13, 2017
+
+iddf17-hw2-rowtap Public archive
+Forked from idd-fall17/hw2_natolambert_rowtap
+Java Apache License 2.0 Updated on Sep 10, 2017
+
+# SCHOLAR
+
+Source: Google Scholar profile — captured 2026-09-23.
+Raw listing as displayed. Shows "Articles 1–20" — this is the top 20 by
+citation count, not the complete record. Asterisks on citation counts are
+as shown by Scholar.
+
+Nathan Lambert
+Trillium Labs
+Verified email at trilliumlabs.org - Homepage
+Reinforcement Learning  Machine Learning  Robotics  Responsible AI
+
+Title / Authors / Venue / Cited by / Year
+
+Tülu 3: Pushing Frontiers in Open Language Model Post-Training
+N Lambert, J Morrison, V Pyatkin, S Huang, H Ivison, F Brahman, ...
+arXiv preprint arXiv:2411.15124
+1481*  2024
+
+Zephyr: Direct distillation of lm alignment
+L Tunstall, E Beeching, N Lambert, N Rajani, K Rasul, Y Belkada, ...
+arXiv preprint arXiv:2310.16944
+1135  2023
+
+[Github] Trl: Transformer reinforcement learning
+L von Werra, Y Belkada, L Tunstall, E Beeching, T Thrush, N Lambert
+https://github.com/lvwerra/trl
+1066*  2020
+
+[Github] Diffusers: State-of-the-art diffusion models
+P von Platen, S Patil, A Lozhkov, P Cuenca, N Lambert, K Rasul, ...
+https://github.com/huggingface/diffusers
+1005*  2022
+
+Molmo and pixmo: Open weights and open data for state-of-the-art vision-language models
+M Deitke, C Clark, S Lee, R Tripathi, Y Yang, JS Park, M Salehi, ...
+2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR ...
+893*  2025
+
+OLMo: Accelerating the science of language models
+D Groeneveld, I Beltagy, E Walsh, A Bhagia, R Kinney, O Tafjord, A Jha, ...
+Proceedings of the 62nd annual meeting of the association for computational ...
+887*  2024
+
+Rewardbench: Evaluating reward models for language modeling
+N Lambert, V Pyatkin, J Morrison, LJ Miranda, BY Lin, K Chandu, N Dziri, ...
+Findings of the Association for Computational Linguistics: NAACL 2025, 1755-1797
+840  2025
+
+2 OLMo 2 Furious
+T OLMo, P Walsh, L Soldaini, D Groeneveld, K Lo, S Arora, A Bhagia, ...
+arXiv preprint arXiv:2501.00656
+723*  2024
+
+Dolma: An open corpus of three trillion tokens for language model pretraining research
+L Soldaini, R Kinney, A Bhagia, D Schwenk, D Atkinson, R Authur, ...
+Proceedings of the 62nd Annual Meeting of the Association for Computational ...
+637*  2024
+
+Wildguard: Open one-stop moderation tools for safety risks, jailbreaks, and refusals of llms
+S Han, K Rao, A Ettinger, L Jiang, BY Lin, N Lambert, Y Choi, N Dziri
+Advances in neural information processing systems 37, 8093-8131
+620  2024
+
+Open LLM Leaderboard
+E Beeching, C Fourrier, N Habib, S Han, N Lambert, N Rajani, ...
+URL https://huggingface. co/spaces/HuggingFaceH4/open_llm_leaderboard
+505  2023
+
+Camels in a changing climate: Enhancing lm adaptation with tulu 2
+H Ivison, Y Wang, V Pyatkin, N Lambert, M Peters, P Dasigi, J Jang, ...
+arXiv preprint arXiv:2311.10702
+387*  2023
+
+Olmoe: Open mixture-of-experts language models
+N Muennighoff, L Soldaini, D Groeneveld, K Lo, J Morrison, S Min, W Shi, ...
+International Conference on Learning Representations 2025, 62061-62121
+382*  2025
+
+A survey on data selection for language models
+A Albalak, Y Elazar, SM Xie, S Longpre, N Lambert, X Wang, ...
+arXiv preprint arXiv:2402.16827
+377  2024
+
+Olmo 3
+T Olmo, A Ettinger, A Bertsch, B Kuehl, D Graham, D Heineman, ...
+arXiv preprint arXiv:2512.13961
+359*  2025
+
+Low Level Control of a Quadrotor with Deep Model-Based Reinforcement Learning
+N Lambert, DS Drew, J Yaconelli, R Calandra, S Levine, KSJ Pister
+IEEE Robotics and Automation Letters 4 (4), 4224-4230
+267  2019
+
+Spurious rewards: Rethinking training signals in rlvr
+R Shao, SS Li, R Xin, S Geng, Y Wang, S Oh, SS Du, N Lambert, S Min, ...
+arXiv preprint arXiv:2506.10947
+244*  2025
+
+Social choice for ai alignment: Dealing with diverse human feedback
+V Conitzer, R Freedman, J Heitzig, WH Holliday, BM Jacobs, N Lambert, ...
+arXiv preprint arXiv:2404.10271 5
+236  2024
+
+On the importance of hyperparameter optimization for model-based reinforcement learning
+B Zhang, R Rajan, L Pineda, N Lambert, A Biedenkapp, K Chua, F Hutter, ...
+International Conference on Artificial Intelligence and Statistics, 4015-4023
+186  2021
+
+Generalizing verifiable instruction following
+V Pyatkin, S Malik, V Graf, H Ivison, S Huang, P Dasigi, N Lambert, ...
+Advances in Neural Information Processing Systems 38
+182  2026
+
+Articles 1–20
