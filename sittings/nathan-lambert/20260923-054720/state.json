@@ -9,13 +9,14 @@
     "open_source_dev",
     "science_lead"
   ],
-  "turn": 5,
+  "turn": 6,
   "speak_count": {
     "people_partner": 1,
     "ai_evaluator": 1,
     "senior_engineer": 1,
     "open_source_dev": 1,
-    "engineering_manager": 1
+    "engineering_manager": 1,
+    "science_lead": 1
   },
   "seats": {
     "people_partner": {
@@ -140,6 +141,33 @@
       ],
       "question_for": "people_partner",
       "resolving_question": "Has he ever, anywhere in his career, been evaluated on a shipped product outcome rather than a publication, benchmark, or public research artifact \u2014 and if not, is he telling us in the interview that he wants that regime change, or just that he needs a job while the stealth venture is paused?"
+    },
+    "science_lead": {
+      "seat": "science_lead",
+      "text": "Reading the Scholar list by authorship position rather than volume: he has exactly two first-author anchors \u2014 T\u00fclu 3 (1481 cites, ~22 months old) and RewardBench (840 cites, 'the first evaluation tool for reward models') \u2014 and both map directly onto the JD's two non-negotiables, post-training craft and grader-as-first-class-artefact; everything else on the list (Molmo/PixMo, OLMo, OLMo 2, OLMo 3, Dolma, WildGuard, OLMoE, the data-selection survey, Spurious Rewards, Camels/Tulu 2) is mid-pack co-authorship on large collaborative team papers, which is the AI2/HF norm and not itself a science signal either way \u2014 Chair's caution about peer-review volume not being the credit is correct, and the two first-author pieces are what earn credit here. Novelty: RewardBench is genuine new infrastructure that the field then builds on (WildGuard and Spurious Rewards both use reward/RLVR evaluation machinery downstream of his work); T\u00fclu 3 is a rigorous, fully-open systematic recipe rather than a landmark new method \u2014 solid applied science, not theory. Rigour is unscored \u2014 the packet gives titles, author lists, venues, and citation counts only, no abstracts or ablation descriptions, so I cannot verify experimental rigour from what's captured, only infer it from the fact that others cite and build on the work quickly. Bridge to practice is stronger than engineering_manager's framing suggests: T\u00fclu and OLMo are not just papers, they are shipped open-weight model families with real adoption, and the 1-week-old activity post \u2014 'We did this: If your GRPO group has all wrong completions, sample more... Congrats to Michael (my first research intern)' \u2014 is first-person evidence of him personally running an RLVR training modification this month, inside the stealth org, which is fresher and more direct hands-on-training evidence than anything in the resume proper. Independence is clearly established: RLHF team lead at HF and Olmo co-lead at AI2 are both post-PhD, and both flagship first-author papers came after those titles, not before, so this is demonstrated research leadership, not an advisor's agenda. My verdict is Hire on the science-capability axis \u2014 the record is dense, current, independent, and precisely targeted at the seat's two hard requirements \u2014 but I flag one unresolved artefact gap: Scholar's 'Articles 1\u201320' is sorted by citation, not date, so it structurally hides low-cited very recent output; the resolving question is what he's published or built since AI2 ended in Jun 2026, because a citation-sorted view will always bury that under T\u00fclu 3 and OLMo regardless of what it says.",
+      "verdict": "Hire",
+      "confidence": 68,
+      "packet_density": "Dense",
+      "changed": false,
+      "changed_on": "",
+      "cites": [
+        "T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training ... 1481* 2024",
+        "Rewardbench: Evaluating reward models for language modeling ... 840 2025",
+        "RewardBench: the first evaluation tool for reward models.",
+        "Wildguard: Open one-stop moderation tools for safety risks, jailbreaks, and refusals of llms",
+        "Spurious rewards: Rethinking training signals in rlvr",
+        "Shows 'Articles 1\u201320' -- this is the top 20 by citation count, not the complete record.",
+        "We did this: If your GRPO group has all wrong completions, sample more with probability P (~0.9)",
+        "Congrats to Michael (my first research intern) and a fun collaboration.",
+        "Research Scientist & RLHF Team Lead \u2014 Hugging Face",
+        "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)"
+      ],
+      "background_used": [
+        "Arxiv preprints and ACL Findings are the primary fast-cycle venues in open LLM post-training research; citation velocity substitutes for formal venue tier in this subfield, which is a correction to my own stated bias toward over-valuing peer review.",
+        "Large multi-author team papers (10+ authors) at AI2/HF collaborative labs are normal and don't individually signal much about a specific author's contribution; first-authorship position is the stronger signal."
+      ],
+      "question_for": null,
+      "resolving_question": "What has he published, released, or shipped since AI2 ended (Jun 2026) under the stealth org \u2014 Scholar's citation-sort structurally hides this, and it's the one window into whether the open-science identity is continuing unchanged or already pivoting toward something shippable."
     }
   },
   "state_of_meeting": null,
@@ -227,7 +255,7 @@
     }
   ],
   "last_speakers": [
-    "open_source_dev",
-    "engineering_manager"
+    "engineering_manager",
+    "science_lead"
   ]
 }
