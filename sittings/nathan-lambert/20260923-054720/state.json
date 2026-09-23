@@ -9,61 +9,63 @@
     "open_source_dev",
     "science_lead"
   ],
-  "turn": 12,
+  "turn": 15,
   "speak_count": {
-    "people_partner": 2,
-    "ai_evaluator": 2,
+    "people_partner": 3,
+    "ai_evaluator": 3,
     "senior_engineer": 2,
     "open_source_dev": 2,
-    "engineering_manager": 2,
+    "engineering_manager": 3,
     "science_lead": 2
   },
   "seats": {
     "people_partner": {
       "seat": "people_partner",
-      "text": "To engineering_manager directly: nowhere in the packet is he evaluated on a shipped product outcome \u2014 HF ('Research Scientist & RLHF Team Lead,' open-source infra), AI2 ('Researching RLHF... in the open and for the common good'), and Interconnects (newsletter, Congressional testimony) are all publication/community/media-outcome environments, and this is a dense packet with full job history and an About section, so this reads as EVIDENCE OF ABSENCE, not a blank we should excuse. On the second half of the question, the packet itself argues against 'just needs a job while paused': the About uses present tense \u2014 'I'm starting a new research organization around open language models' \u2014 and the headline reads 'Building Open Language Models @ (stealth)' as a current state, not a past one. I take science_lead's GRPO point and it cuts the same way, not the opposite: 'We did this... Congrats to Michael (my first research intern)' one week ago is evidence he is personally running training now, but the packet does not say this happened inside the stealth org (fact_checker's correction stands), and either way \u2014 running an experiment with a first research intern is what an active, staffing-up founder does, which hardens rather than resolves the availability problem. Combined with the title drop from 'co-lead'/'team lead' to a no-reports IC seat, and a role whose IS NOT list explicitly excludes the research-scientist track his whole identity is built on with no stated growth path back to leading people or an org, this is over-experience hardening into a real flag that no band move fixes; my verdict stays Not assessable - ask in recruiter call, but the one question only he can answer is whether the venture is live and staffed (which present-tense About plus 'my first research intern' both suggest) or actually paused, and if live, why he'd trade it for a no-reports IC seat.",
-      "verdict": "Not assessable - ask in recruiter call",
-      "confidence": 40,
+      "text": "Putting comp and retention on the record: PACKET FACT the band is '$231,000 \u2013 $340,000 base, plus equity and bonus' with 'BAND STRETCH: not stated in the JD... treat $340K as the top,' and the role's own LEVEL line calls this 'senior-to-staff IC' \u2014 yet the candidate's demonstrated scope is 'Senior Research Scientist,' 'RLHF Team Lead' at HuggingFace, 'co-leading Olmo' at AI2, first-author on Tulu 3 (1481 cites) and RewardBench, plus a 40,357-follower public platform and Congressional testimony on open models. INFERENCE (BACKGROUND: senior/staff research profiles with team-lead or co-lead titles, flagship first-author papers, and this level of public visibility typically command well above $340K base at comparable well-funded AI companies, before equity): this reads as beyond-stretch, not within-stretch over-experience, and nothing in the role file signals the hiring manager will move the band that far for a no-reports IC seat. That comp gap combines with the title drop from team-lead/co-lead to IC and a seat with no stated growth path back into leadership \u2014 the hard-flag combination my lens is built to name \u2014 and it sits on top of a founder ambition that is evidenced rather than assumed ('I'm starting a new research organization around open language models,' present tense, plus 'my first research intern'), which is itself the primary 24-month retention driver, alongside seat size (no reports, no path back to leading an org) and the comp gap; Seattle-versus-SF-hybrid is a secondary driver. I'm moving from 'Not assessable' to Misaligned on the comp/seat-fit axis specifically \u2014 capability was never in question \u2014 while the recruiter-call question of whether he's actually available (live venture vs. paused, and why he'd trade it for this seat) stays open and unresolved by anything currently on record.",
+      "verdict": "Misaligned",
+      "confidence": 58,
       "packet_density": "Dense",
-      "changed": false,
-      "changed_on": "",
+      "changed": true,
+      "changed_on": "First explicit comp calibration and 24-month retention read against the role's stated band/stretch ($231K-$340K base, stretch unset) and level ('senior-to-staff IC') \u2014 moves verdict from 'Not assessable - ask in recruiter call' (turn 7, availability-only) to 'Misaligned' because the comp-vs-experience and seat-that-can't-grow combination is now itself a hard flag independent of the unresolved availability question.",
       "cites": [
-        "I'm starting a new research organization around open language models.",
-        "Building Open Language Models @ (stealth)",
-        "We did this: If your GRPO group has all wrong completions, sample more with probability P (~0.9)",
-        "Congrats to Michael (my first research intern) and a fun collaboration.",
+        "Comp: $231,000 \u2013 $340,000 base, plus equity and bonus.",
+        "BAND STRETCH: not stated in the JD. Until the hiring manager sets one, treat $340K as the top and any candidate needing more as beyond stretch",
+        "LEVEL (inference, not stated in the JD): senior-to-staff IC.",
+        "Senior Research Scientist \u2014 Allen Institute for AI (AI2)",
         "Research Scientist & RLHF Team Lead \u2014 Hugging Face",
         "I was recently co-leading Olmo - the open language modeling effort - at the Allen Institute for AI (Ai2)",
-        "Founder \u2014 Interconnects AI ... Jan 2022 - Present",
-        "Research Scientist / post-doc track. ... the deliverable is a shipped model on the legal product, not novel method or papers."
+        "I'm starting a new research organization around open language models.",
+        "40,357 followers"
       ],
       "background_used": [
-        "A founder actively bringing on and crediting a first research intern is a normal signal of a live, staffing-up operation, not a winding-down one."
+        "Senior/staff research profiles with team-lead or co-lead titles, flagship first-author papers, and this level of public visibility (newsletter reach, Congressional testimony) typically command base compensation well above $340K at comparable well-funded AI companies, before equity or bonus."
       ],
       "question_for": null,
-      "resolving_question": "In the recruiter call: is the stealth venture live and staffed (present-tense About plus 'my first research intern' both point that way), or has it actually wound down \u2014 and if live, why would he take a no-reports SF-hybrid IC seat over running his own org?"
+      "resolving_question": "In the recruiter call: what base comp would he actually accept, and is the stealth venture live and staffed or paused \u2014 if the answer is anywhere near or above $340K and the venture is live, this seat is not reachable at any realistic band move."
     },
     "ai_evaluator": {
       "seat": "ai_evaluator",
-      "text": "Relabeling per fact_checker, without argument: 'production research Python via TRL' downgrades to INFERENCE \u2014 sixth-listed co-author credit on the TRL library repo shows co-authorship, not what code Lambert wrote or maintained; and dgx-spark-setup is Shell ('Setup guide... Shell 182 16'), not Python, so I drop it as Python evidence. Neither touches the post-training capability grid itself \u2014 Tulu 3, RewardBench, and OLMo/OLMo2/OLMo3 authorship are untouched \u2014 but it thins the Python/production-craft leg of the JD's disambiguation triad, which is the same gap senior_engineer is separately probing. On open_source_dev's colloquium point: the description 'A markdown native slides tool for academics building with agents' pairs with topics 'education slides' \u2014 no tool-use, orchestration, or subagent topic words \u2014 so read plainly this is a slides tool marketed at people who build with AI agents, not evidence he built or reasoned about a tool/subagent/retrieval harness himself; that's adjacency, correctly 'Not visible - plausible' rather than resolved, so I'll soften my phrase from 'zero footprint' to 'no visible footprint at Build depth' but the harness gap itself stands. Verdict stays Strong AI fit; confidence moves from 62 to 56 to reflect the weakened Python-craft citation, and the resolving question now has two parts \u2014 an authored training script/PR (Tulu or OLMo post-training recipe, or a TRL commit) to establish the Python leg, and any evidence \u2014 informal or otherwise \u2014 that he has built or orchestrated multi-step agent tool-use/subagent/retrieval systems beyond colloquium's agent-friendly markdown format.",
+      "text": "Two-worlds on the agent-harness gap, as I was called on to resolve: World A, real gap \u2014 his entire demonstrated arc (Tulu 3, RewardBench, OLMo family, TRL co-authorship, rlhf-book) is single-turn/generative post-training and reward modeling on static completions, and AI2/HF are open-model research labs whose benchmarks never required tool-use, subagent, or retrieval-harness engineering, so it plausibly just never entered his work. World B, unrepresented \u2014 Scholar's own header says 'Articles 1-20... this is the top 20 by citation count, not the complete record,' 'No README text captured for any repo' across all 26 listed, and his most recent public output ('Spurious rewards: Rethinking training signals in rlvr,' and the 1-week-old post: 'We did this: If your GRPO group has all wrong completions, sample more with probability P (~0.9)... in search of more GRPO batches with nonzero gradient') is exactly the RL-on-verifiable-multi-step-tasks technique family that agent-harness tuning for long-horizon work is typically built from, and none of it is captured under his current stealth headline ('Building Open Language Models @ (stealth)') at all. I split this roughly 35/65 toward 'unrepresented': the packet's structural blind spots on this specific axis (citation-sorted Scholar hides recent low-cited work, zero README/commit content for any repo, total silence on the stealth org's actual work) are severe enough, and his 2025-2026 RLVR/GRPO trajectory close enough to the harness discipline, that 'not visible' reads as ABSENCE OF EVIDENCE rather than EVIDENCE OF ABSENCE here \u2014 a correction to my own turn-8 framing, where I called it 'no visible footprint at Build depth' without weighing how thin the packet specifically is on his last two years. The single separating question: has he, in the stealth org or in work Scholar's citation-sort buries, built or tuned a multi-step agentic system \u2014 tools, subagents, retrieval, validation loops \u2014 as opposed to single-turn post-training and reward modeling on static completions; note also that this sits outside the JD's strict three-part disambiguation test (weight-changing post-training, trace-level judgment, production Python), which he still plausibly clears, so even a real harness gap would leave him inside the role's core triad, just short on one piece of its broader mandate.",
       "verdict": "Strong AI fit",
-      "confidence": 56,
+      "confidence": 55,
       "packet_density": "Dense",
       "changed": false,
       "changed_on": "",
       "cites": [
-        "[Github] Trl: Transformer reinforcement learning, L von Werra, Y Belkada, L Tunstall, E Beeching, T Thrush, N Lambert",
-        "dgx-spark-setup Public - Setup guide for ML training on NVIDIA DGX Spark (GB10 Blackwell, CUDA 13, aarch64) / Shell 182 16 Updated on Feb 26",
-        "colloquium Public - A markdown native slides tool for academics building with agents. / education slides / Python 298 18 MIT License",
-        "T\u00fclu 3: Pushing Frontiers in Open Language Model Post-Training",
-        "Rewardbench: Evaluating reward models for language modeling",
-        "OLMo 3"
+        "Articles 1-20",
+        "this is the top 20 by citation count, not the complete record",
+        "No README text captured for any repo.",
+        "Spurious rewards: Rethinking training signals in rlvr",
+        "We did this: If your GRPO group has all wrong completions, sample more with probability P (~0.9) -- in search of more GRPO batches with nonzero gradient. It works!",
+        "Building Open Language Models @ (stealth)",
+        "the hire tunes both the model (SFT, preference optimisation, RLHF/RLAIF, reward modelling, distillation, open-weight adaptation) and the harness around it (domain skills, tools, subagents, retrieval, validation loops) for long-horizon work"
       ],
       "background_used": [
-        "TRL (Transformer Reinforcement Learning) is HuggingFace's RLHF/DPO/PPO training library; sixth-author position on a shared library repo is a co-credit, not proof of authored production code."
+        "RLVR and GRPO are the RL-on-verifiable-task technique family that agent-harness/tool-use tuning for long-horizon work is typically built from, so recent hands-on RLVR work is adjacent to (though not proof of) harness engineering.",
+        "A Scholar profile display sorted by citation count structurally suppresses recent, not-yet-highly-cited work, independent of whether that work exists."
       ],
       "question_for": null,
-      "resolving_question": "Can he show an authored training script, PR, or commit (Tulu/OLMo post-training recipe or a TRL commit) to establish the Python-craft leg, and separately, is there any evidence \u2014 even informal \u2014 of him building or reasoning about multi-step agent tool-use/subagent/retrieval orchestration, since colloquium's 'for academics building with agents' is adjacency at best and the rest of the packet is silent?"
+      "resolving_question": "Has he, in the stealth org or in output Scholar's citation-sort buries, built or tuned a multi-step agentic system (tools, subagents, retrieval, validation loops) versus only single-turn post-training and reward modeling on static completions?"
     },
     "senior_engineer": {
       "seat": "senior_engineer",
@@ -110,24 +112,25 @@
     },
     "engineering_manager": {
       "seat": "engineering_manager",
-      "text": "Conceding the DeepMind point without argument: fact_checker is right that 'Research Scientist Intern \u2014 DeepMind... May 2021 - Oct 2021... working with the controls team on robotics, RL' means 'everywhere else is a nonprofit lab' was overstated \u2014 relabeling to 'everywhere else is a nonprofit lab, an open-source infra company, or a six-month pre-PhD-completion robotics internship,' which doesn't change the substance since that internship is controls/robotics, not LLM post-training under commercial constraints. On science_lead's challenge, the correction lands: T\u00fclu and OLMo being shipped open-weight model families, not just papers, is a fair read and I'm raising problem-match on the core loop \u2014 data, environments, graders, training recipes, ship a model \u2014 to DEMONSTRATED rather than paper-only. But 'shipped' there means shipped to the open-weight research community for citation and adoption, not shipped against 'a cost / latency / security / governance Pareto frontier' for a paying enterprise customer, which is the specific frontier the JD names and which nothing in the packet \u2014 including the GRPO post, credited only to 'Michael (my first research intern)' with no employer or product named \u2014 puts him inside. I'll count the GRPO post as current, first-person hands-on training evidence and tighten my technical-ramp estimate to 6-10 weeks accordingly, but it doesn't touch the environment-match or regime-change risk I flagged last turn, so verdict stays Screen, confidence moves 38 to 44.",
+      "text": "These aren't the same standard applied inconsistently \u2014 they're two different claims at two different grains, and the packet's density differs across them. ai_evaluator's harness question is a narrow technical-activity claim scoped to specific recent months at one employer whose entire content is a headline, 'Building Open Language Models @ (stealth)' \u2014 zero lines describing the actual work, so that window really is ABSENCE OF EVIDENCE. The cost/latency/security/governance question is coarser: it asks what kind of organization he's worked for, and the packet gives complete title-plus-description coverage across every disclosed employer since 2017 \u2014 DeepMind internship ('Working with the controls team on robotics, RL'), Hugging Face ('RLHF team-lead'), AI2 ('in the open and for the common good'), and his own newsletter ('Cutting edge AI research and news in your inbox') \u2014 none framed as commercial-product-constrained work, and that pattern holds across 8+ years and five distinct employers, not one thin recent line. So I stand on EVIDENCE OF ABSENCE for environment match \u2014 the packet is detailed enough, at the grain that claim needs, for a paying-customer shipping environment to show if it existed, and it doesn't \u2014 while conceding ai_evaluator is right that the fine-grained harness-engineering question is unresolved because the one employer where it might live has no content at all. Verdict stays Screen, confidence 44; technical ramp 6-10 weeks, with availability/comp and regime-fit \u2014 not capability \u2014 the open risk.",
       "verdict": "Screen",
       "confidence": 44,
       "packet_density": "Dense",
-      "changed": true,
-      "changed_on": "fact_checker's correction that the DeepMind internship exists (relabeling my 'everywhere else is a nonprofit lab' claim), and science_lead's point that T\u00fclu/OLMo are shipped open-weight model families rather than papers-only, which raises problem-match on the core post-training loop from CLAIMED to DEMONSTRATED while leaving the cost/latency/security/governance-constrained-product gap and the GRPO post's unstated employer unresolved.",
+      "changed": false,
+      "changed_on": "",
       "cites": [
-        "Research Scientist Intern \u2014 DeepMind \u00b7 Internship / May 2021 - Oct 2021 \u00b7 6 mos / Working with the controls team on robotics, RL, and other machine learning research.",
-        "We did this: If your GRPO group has all wrong completions, sample more with probability P (~0.9)",
-        "Congrats to Michael (my first research intern) and a fun collaboration.",
+        "Building Open Language Models @ (stealth)",
+        "Working with the controls team on robotics, RL, and other machine learning research.",
+        "Machine learning research scientist & reinforcement learning from human feedback (RLHF) team-lead.",
+        "Researching RLHF and fine-tuning LLMs in the open and for the common good with AllenNLP.",
+        "Cutting edge AI research and news in your inbox.",
         "against a cost / latency / security / governance Pareto frontier"
       ],
       "background_used": [
-        "DeepMind's controls/robotics research internship track is closer in kind to AI2/Berkeley research work than to shipping a governed commercial product; it doesn't establish enterprise-product environment match even though it corrects the 'nonprofit lab everywhere' claim.",
-        "Open-weight model releases (T\u00fclu, OLMo) are shipped artifacts judged by community adoption and citation, which is a different shipping discipline than optimizing a model against cost/latency/security/governance constraints for a paying customer."
+        "Complete title-plus-one-line-description coverage across every disclosed employer in a work history is sufficient packet density to assess organizational environment/mission type, even though it's insufficient to assess fine-grained technical activity (e.g., specific engineering sub-disciplines) within any single role."
       ],
-      "question_for": "people_partner",
-      "resolving_question": "In the recruiter call, ask directly: has he ever been asked to trade model quality against cost, latency, or security/governance constraints for a paying customer \u2014 and separately, is the GRPO 'first research intern' post inside his own stealth org (making the availability problem people_partner is flagging even sharper) or a fresh AI2/collaborator artifact?"
+      "question_for": null,
+      "resolving_question": "In the recruiter call: has he ever traded model quality against cost, latency, or security/governance constraints for a paying customer anywhere in his career, and separately, what does the stealth org actually build and for whom?"
     },
     "science_lead": {
       "seat": "science_lead",
@@ -299,10 +302,32 @@
         }
       ],
       "downgrade": []
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "people_partner: The BAND STRETCH cite omits the final clause from the role file. The actual text reads 'treat $340K as the top and any candidate needing more as beyond stretch \u2014 do not assume headroom that the packet does not grant' but the cite stops after 'beyond stretch' without indicating the omission.",
+      "missing_from_packet": [],
+      "background": [],
+      "inference": [],
+      "downgrade": []
+    },
+    {
+      "seat": "fact_checker",
+      "speak": true,
+      "text": "ai_evaluator cites 'the hire tunes both the model (SFT, preference optimisation, RLHF/RLAIF, reward modelling, distillation, open-weight adaptation) and the harness around it (domain skills, tools, subagents, retrieval, validation loops) for long-horizon work' \u2014 this quote appears in the role file (lines 13-16), not in the candidate packet.",
+      "missing_from_packet": [
+        "the hire tunes both the model ... and the harness around it ... for long-horizon work (cited but appears only in role file, not candidate)"
+      ],
+      "background": [
+        "AI2/HF are open-model research labs whose benchmarks never required tool-use, subagent, or retrieval-harness engineering \u2014 not in packet, not listed in BACKGROUND_USED"
+      ],
+      "inference": [],
+      "downgrade": []
     }
   ],
   "last_speakers": [
-    "engineering_manager",
-    "science_lead"
+    "ai_evaluator",
+    "engineering_manager"
   ]
 }
